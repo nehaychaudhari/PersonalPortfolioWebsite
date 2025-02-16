@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio Website | Neha</title>
+
+    <!-- AOS Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="content/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- JQuery CDN Script For Navbar Activation and dark mode -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Contact Form link with emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Your_Public_Key",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Toggle background video -->
+    <video id="video1" src="content/BlackCurtain.mp4" autoplay loop muted class="active"></video>
+    <video id="video2" src="content/WhiteCurtain.mp4" autoplay loop muted></video>
+
+    <!-- Header Start -->
+    <header id="header" class="header d-flex justify-content-center">
+        <ul class="navbar" id="navmenu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <!-- Dark Mode Button -->
+            <li><button id="dark-mode-toggle"><i class="fa-solid fa-moon"></i></button>
+            </li>
+        </ul>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
+    <!-- mg div for space from top -->
+    <div class="mg" id="home"></div>
+    <section class="maincontent">
+
+        <!-- Home Start -->
+        <section class="home container-md">
+            <div id="name">
+                <h4 class="text-center" data-aos="fade-down">Welcome In My World. My Name Is</h5>
+                    <h1 style="font-size: 5rem;" data-aos="fade-up">
+                        <span>N</span><span>e</span><span>h</span><span>a</span>
+                        <span>Y</span><span>o</span><span>g</span><span>e</span><span>s</span><span>h</span>
+                        <span>C</span><span>h</span><span>a</span><span>u</span><span>d</span><span>h</span><span>a</span><span>r</span><span>i</span>
+                    </h1>
+            </div>
+            <div class="row" id="frame">
+                <div class="col">
+                </div>
+
+                <div class="col" data-aos="zoom-in">
+                    <div class="mySlides">
+                        <img src="content/FemaleAvatar2.jpeg" alt="Female Avatar Image" class="PhotoFrame"
+                            id="PhotoFrame">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="content/FemaleAvatar1.jpg" alt="Female Avatar Image" class="PhotoFrame"
+                            id="PhotoFrame">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="content/FemaleAvatar3.jpeg" alt="Female Avatar Image" class="PhotoFrame"
+                            id="PhotoFrame">
+                    </div>
+                </div>
+
+                <div class="col">
+                </div>
+            </div>
+            <p id="bio" data-aos="fade-right">&emsp;&emsp;&emsp;I am Neha Yogesh Chaudhari, a passionate and dedicated
+                individual with a knack
+                for creativity and problem solving. With a strong interest in technology and art, I strive to
+                deliver innovative solutions and drive impactful results. I take pride in my keen attention to detail
+                and collaborative spirit, and I am always eager to embrace new challenges and opportunities for growth.
+            </p>
+        </section>
+        <!-- Home End -->
+
+        <!-- About Start -->
+        <div id="about"></div>
+        <section class="about container-md">
+            <h1 style="font-size: 5rem;" data-aos="fade-up">
+                <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+            </h1>
+
+            <div class="download">
+                <h5 class="text-center" data-aos="fade-down">This is my resume. You can review and download it.</h5>
+                <!-- Resume Download Link -->
+                <a href="content/Resume.pdf" class="resume-link" target="_blank">
+                    <img src="content/pdf.gif" alt="Preview" title="Click here to view resume."
+                        data-aos="fade-up-right">
+                </a>
+
+                <!-- Using url link -->
+                <a href="https://drive.google.com/file/d/1zD0MrDurLVrbd3mTuj03wTepSigMzPnE/view?usp=drive_link"
+                    class="resume-link-download" download="MyResume">
+                    <img src="content/download.gif" alt="Download" title="Click here to download resume."
+                        data-aos="fade-up-left">
+                </a>
+            </div>
+
+            <h3>Education</h3>
+            <table border="1" class="education" data-aos="flip-left">
+                <tr>
+                    <th>Degree</th>
+                    <th>Percentage</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>MCA</td>
+                    <td>74.13%</td>
+                    <td>KCE Society Institute of Management and Research, Jalgaon</td>
+                    <td>2023 - 2025</td>
+                </tr>
+                <tr>
+                    <td>BCA</td>
+                    <td>80.71%</td>
+                    <td>KCE Society Institute of Management and Research, Jalgaon</td>
+                    <td>2020 - 2023</td>
+                </tr>
+                <tr>
+                    <td>12<sup>th</sup></td>
+                    <td>52.77%</td>
+                    <td>K.Narkhede Vidyalaya & Jr. College, Bhusawal</td>
+                    <td>2019 - 2020</td>
+                </tr>
+                <tr>
+                    <td>10<sup>th</sup></td>
+                    <td>79.00%</td>
+                    <td>Madhyamik Kanya Shala, Yawal</td>
+                    <td>2018 - 2019</td>
+                </tr>
+            </table>
+
+            <h3>Work Experience</h3>
+            <table class="work" data-aos="flip-right">
+                <tr>
+                    <td>
+                        <p>&emsp;&emsp;&emsp;Aarohiinfo Information Technology</p>
+                        <p>&emsp;&emsp;&emsp;ASP.NET Developer Intern</p>
+                        <p>&emsp;&emsp;&emsp;Technology: ASP.Net, MVC, SQL</p>
+                    </td>
+                    <td class="text-end">
+                        <p>2023 - 2024&emsp;&emsp;&emsp;</p>
+                        <p>11 Months&emsp;&emsp;&emsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">&emsp;&emsp;&emsp;Worked as an ASP.NET Developer Intern at Aarohiinfo Information
+                        Technology, gaining hands-on experience in developing web applications
+                        using the ASP.NET framework and C#. Acquired strong knowledge of
+                        building dynamic, user-friendly, and efficient applications. Enhanced technical
+                        skills in coding, debugging, and collaborating.
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Certifications - Great Learning</h3>
+            <table class="certify" data-aos="flip-left">
+                <tr>
+                    <td>
+                        <p>Front End Development - HTML</p>
+                        <p>Front End Development - CSS</p>
+                        <p>Programming Basics</p>
+                    </td>
+                    <td class="td2">
+                        <p>Python Fundamentals for Beginners</p>
+                        <p>Java Programming</p>
+                        <p>UI/UX For Beginners</p>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h3>Skills And Technical Strengths</h3>
+            <table class="skills" data-aos="flip-right">
+                <tr class="thead">
+                    <th>Skills</th>
+                    <th>Computer Languages</th>
+                    <th>Software And Tools</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Communication</p>
+                        <p>Content Creation</p>
+                        <p>Problem Solving</p>
+                        <p>Website Designing</p>
+                        <p>Logo Designing</p>
+                        <p>Video Editing</p>
+                        <p>Report Writing and Presenting</p>
+                    </td>
+
+                    <td>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>OOPS</p>
+                        <p>Javascript</p>
+                        <p>jQuery</p>
+                        <p>Python</p>
+                        <p>PHP</p>
+                    </td>
+
+                    <td>
+                        <p>Visual Studio Code</p>
+                        <p>MS Office</p>
+                        <p>Canva</p>
+                        <p>ChatGPT</p>
+                        <p>GitHub</p>
+                        <p>Bootstrap</p>
+                        <p>Clipchamp</p>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Hobbies</h3>
+            <table class="hobbies" data-aos="flip-left">
+                <tr>
+                    <td>
+                        <p>Painting</p>
+                        <p>Web Designing</p>
+                    </td>
+                    <td>
+                        <p>Use Of AI Tools</p>
+                        <p>Learning New Things</p>
+                    </td>
+                    <td>
+                        <p>Mehendi</p>
+                        <p>Art And Craft</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!-- About End -->
+
+        <!-- Services Start -->
+        <div id="services"></div>
+        <section class="services container-md" data-aos="flip-down">
+            <h1 style="font-size: 5rem;" data-aos="fade-up">
+                <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+            </h1>
+
+            <div class="row" data-aos="zoom-in-up">
+                <div class="col">
+                    <h3>Web Development Services</h3>
+                    <b>Skills Used: </b>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>PHP</li>
+                        <li>Database</li>
+                    </ul>
+                    <b>Tools: </b>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>GitHub</li>
+                        <li>Xampp</li>
+                    </ul>
+                    <b>Services: </b>
+                    <ul>
+                        <li>Responsive website designing</li>
+                        <li>Custom website development</li>
+                        <li>Maintenance and updates</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>GitHub Repository Management</h3>
+                    <b>Skills Used: </b>
+                    <ul>
+                        <li>GitHub</li>
+                        <li>Programming Languages</li>
+                    </ul>
+                    <b>Services: </b>
+                    <ul>
+                        <li>Version control and repository setup</li>
+                        <li>Collaboration support for teams</li>
+                        <li>Deployment and project documentation</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3> UI/UX Design Services</h3>
+                    <b>Skills Used: </b>
+                    <ul>
+                        <li>Website Designing</li>
+                        <li>Canva</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <b>Tools: </b>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Canva</li>
+                    </ul>
+                    <b>Services: </b>
+                    <ul>
+                        <li>User-friendly interface design</li>
+                        <li>Wireframing and prototyping</li>
+                        <li>Visual and interactive design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" data-aos="zoom-out-up">
+                <div class="col">
+                    <h3>Content Creation & Logo Designing</h3>
+                    <b>Skills Used: </b>
+                    <ul>
+                        <li>Content Creation</li>
+                        <li>Logo Designing</li>
+                        <li>Canva</li>
+                    </ul>
+                    <b>Tools: </b>
+                    <ul>
+                        <li>Canva</li>
+                        <li>AI Tools</li>
+                    </ul>
+                    <b>Services: </b>
+                    <ul>
+                        <li>Creative logo design</li>
+                        <li>Brand identity creation</li>
+                        <li>Blog and social media content writing</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Video Editing & Presentation</h3>
+                    <b>Skills Used: </b>
+                    <ul>
+                        <li>Video Editing</li>
+                        <li>Report Writing And Presenting</li>
+                    </ul>
+                    <b>Tools: </b>
+                    <ul>
+                        <li>Clipchamp</li>
+                        <li>MS Office</li>
+                        <li>Canva</li>
+                    </ul>
+                    <b>Services: </b>
+                    <ul>
+                        <li>Professional video editing</li>
+                        <li>Report creation and presentation design</li>
+                        <li>Training and explainer videos</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Problem Solving & Programming Support</h3>
+                    <b>Skills Used: </b>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>OOPS</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                    </ul>
+                    <b>Tools: </b>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>GitHub</li>
+                    </ul>
+                    <b>Services: </b>
+                    <ul>
+                        <li>Debugging and troubleshooting</li>
+                        <li>Python automation solutions</li>
+                        <li>Object-Oriented Programming implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services End -->
+
+        <!-- Project Start -->
+        <div id="projects"></div>
+        <section class="projects container-md" data-aos="zoom-out">
+            <h1 style="font-size: 5rem;" data-aos="fade-up">
+                <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+            </h1>
+
+            <h3>Development Projects</h3>
+            <div class="row card-deck">
+                <div class="col" data-aos="zoom-in-right">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="content/AgeCal.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Age Calculator</h5>
+                            <p class="card-text">
+                                An Age Calculator allows users to quickly calculate their
+                                exact age in years, months, and days by simply entering their date of birth. It provides
+                                an easy-to-use interface for accurate and instant results.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                <a href="https://github.com/nehaychaudhari/SnakeGame_Mini_Project" target="_blank">Age
+                                    Calculator</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="zoom-out-up">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="content/TypingGame.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Typing Game</h4>
+                            <p class="card-text">
+                                A Typing Game web app helps users improve their typing speed and accuracy through fun
+                                and interactive challenges. It provides real-time feedback and tracks progress to
+                                enhance keyboard skills.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                <a href="https://github.com/nehaychaudhari/SnakeGame_Mini_Project"
+                                    target="_blank">Typing Game</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="zoom-in-left">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="content/SnakeGame.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Snake Game</h4>
+                            <p class="card-text">
+                                A Typing Game web app helps users improve their typing speed and accuracy through fun
+                                and interactive challenges. It provides real-time feedback and tracks progress to
+                                enhance keyboard skills.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                <a href="https://github.com/nehaychaudhari/SnakeGame_Mini_Project" target="_blank">Snake
+                                    Game</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallary -->
+            <h3>Portfolio</h3>
+            <div class="row">
+                <div class="col" data-aos="flip-left">
+                    <div class="gallery">
+                        <img src="content/AgeCal.png" alt="Age Calculator" title="Age Calculator">
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-right">
+                    <div class="gallery">
+                        <img src="content/TypingGame.png" alt="Typing Game" title="Typing Game">
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-left">
+                    <div class="gallery">
+                        <img src="content/SnakeGame.png" alt="Snake Game" title="Snake Game">
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-right">
+                    <div class="gallery">
+                        <img src="content/Quiz.png" alt="Quiz App" title="Quiz App">
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-left">
+                    <div class="gallery">
+                        <img src="content/Neha.png" alt="Personal Portfolio Web Logo Design" title="Personal Portfolio Web Logo Design">
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-right">
+                    <div class="gallery">
+                        <img src="content/Canva.jpg" alt="Canva Certificate" title="Canva Certificate">
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-left">
+                    <div class="gallery">
+                        <img src="content/TT.png" alt="Tours And Travles Management System Website" title="Tours And Travles Management System Website">
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-right">
+                    <div class="gallery">
+                        <img src="content/MS.png" alt="Student Management System" title="Student Management System">
+                    </div>
+                </div>
+                <div class="col" data-aos="flip-left">
+                    <div class="gallery">
+                        <img src="content/DeshVritt.png" alt="DeshVritt - The History Of India Website" title="DeshVritt - The History Of India Website">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Project End -->
+
+        <!-- Contact Start -->
+        <div id="contact"></div>
+        <section class="contact container-md">
+            <h1 style="font-size: 5rem;" data-aos="fade-up">
+                <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+            </h1>
+            <div class="contact-form" data-aos="flip-left">
+                <form id="contactForm">
+                    <input type="text" id="uname" name="username" autocomplete="on" placeholder="Enter your name"
+                        required>
+                    <input type="email" id="email" name="uemail" autocomplete="on" placeholder="Enter your email"
+                        required>
+                    <input type="text" id="subject" name="sub" placeholder="Enter the subject" required>
+                    <textarea id="message" name="msg" placeholder="Write your message" rows="5" required></textarea>
+                    <button type="button" class="btn btn-outline-primary d-grid gap-2 col-12 mx-auto"
+                        onclick="sendMail()">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <hr class="hr">
+        <!-- Contact End -->
+        <!-- Main Content End -->
+    </section>
+
+    <!-- Footer Start -->
+    <section class="footer section">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4 media">
+                <!-- Left -->
+                <div class="me-5" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    <span class="text-uppercase">Get connected with us on social networks</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div class="social" data-aos="zoom-in">
+                    <a href="https://www.facebook.com/nehachaudhari1501/" class="m-4" target="_blank">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nehaychaudhari/" class="m-4" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nehachaudhari2001/" class="m-4" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                    <a href="https://github.com/nehaychaudhari/" class="m-4" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+            <hr class="hr">
+            <!-- Section: Footer Links  -->
+            <section class="f2">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-3" data-aos="zoom-in-right">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Projects</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 100px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="https://github.com/nehaychaudhari/DynamicQuizApp_Mini_Project"
+                                    target="_blank">Quiz App</a>
+                            </p>
+                            <p>
+                                <a href="https://github.com/nehaychaudhari/SnakeGame_Mini_Project" target="_blank">Snake
+                                    Game</a>
+                            </p>
+                            <p>
+                                <a href="https://github.com/nehaychaudhari/TypingGame_Mini_Project"
+                                    target="_blank">Typing Game</a>
+                            </p>
+                            <p>
+                                <a href="https://github.com/nehaychaudhari/AgeCalculator_Mini_Project"
+                                    target="_blank">Age
+                                    Calculator</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-3" data-aos="zoom-in-up">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 100px; background-color: #7c4dff; height: 2px" />
+                            <p><a href="#">Home</a></p>
+                            <p><a href="#about">About</a></p>
+                            <p><a href="#services">Services</a></p>
+                            <p><a href="#projects">Projects</a></p>
+                            <p><a href="#contact">Contact</a></p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-3" data-aos="zoom-in-left">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 100px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> Chikhali, Pimpri-Chinchwad,
+                                Maharashtra - 123 456</p>
+                            <p><i class="fas fa-envelope mr-3"></i> chaudharinehay2001@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> +91 9876543210</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                <!-- End of .container -->
+            </section>
+            <!-- Section: Footer Links  -->
+
+            <hr class="hr">
+
+            <!-- Copyright -->
+            <div class="text-center copyright">© 2025 Copyright | Neha Chaudhari | AI</div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <!-- Footer End -->
+
+    <!-- AOS Link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- External Javascript File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
